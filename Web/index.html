@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaVision - Clasificador Perro/Gato</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🐾 NovaVision</h1>
+
+    <p class="descripcion">
+        Clasificador de imágenes de perros y gatos
+        mediante procesamiento de imágenes y métodos numéricos.
+    </p>
+
+
+    <!-- ==================================================
+         BOTONES PRINCIPALES
+    =================================================== -->
+
+    <div class="botones">
+
+        <!-- Seleccionar imagen -->
+        <input
+            type="file"
+            id="imagenInput"
+            accept="image/*"
+            hidden
+        >
+
+        <label
+            for="imagenInput"
+            class="btn btn-archivo"
+        >
+            📁 Seleccionar Imagen
+        </label>
+
+
+        <!-- Abrir cámara -->
+        <button
+            id="btnCamara"
+            class="btn btn-camara"
+        >
+            📷 Tomar Foto
+        </button>
+
+    </div>
+
+
+    <!-- ==================================================
+         SECCIÓN DE CÁMARA
+    =================================================== -->
+
+    <div
+        id="camaraContainer"
+        class="camara-container"
+    >
+
+        <video
+            id="video"
+            autoplay
+            playsinline
+        ></video>
+
+
+        <div class="controles-camara">
+
+            <button
+                id="btnCapturar"
+                class="btn-capturar"
+            >
+                📸 Capturar Foto
+            </button>
+
+            <button
+                id="btnCerrarCamara"
+                class="btn-cerrar"
+            >
+                ✖ Cerrar Cámara
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Canvas oculto utilizado para capturar la foto -->
+
+    <canvas
+        id="canvas"
+        style="display: none;"
+    ></canvas>
+
+
+    <!-- ==================================================
+         INFORMACIÓN DE LA IMAGEN
+    =================================================== -->
+
+    <p
+        id="fileName"
+        class="file-name"
+    >
+        Ninguna imagen seleccionada
+    </p>
+
+
+    <!-- ==================================================
+         VISTA PREVIA
+    =================================================== -->
+
+    <div class="preview-area">
+
+        <img
+            id="preview"
+            src=""
+            alt="Vista previa"
+        >
+
+    </div>
+
+
+    <!-- ==================================================
+         ANALIZAR
+    =================================================== -->
+
+    <button
+        id="btnAnalizar"
+        class="analyze-btn"
+        disabled
+    >
+        🔍 Analizar Imagen
+    </button>
+
+
+    <!-- ==================================================
+         RESULTADO
+    =================================================== -->
+
+    <div
+        id="resultado"
+        class="resultado"
+    ></div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

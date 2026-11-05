@@ -2,3 +2,5 @@ numpy>=1.26
 opencv-python>=4.9
 flask>=3.0
 matplotlib>=3.8
+scikit-learn
+pandas

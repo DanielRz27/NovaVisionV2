@@ -1,0 +1,4 @@
+conjunto,n_caracteristicas,lambda,exactitud_train,exactitud_test,cond_A
+base (12),12,0.01,63.67,64.55,2.89e+05
+ampliado (28),28,0.01,65.39,67.27,6.82e+05
+avanzado (1407),1407,3000,89.16,74.55,9.89e+01

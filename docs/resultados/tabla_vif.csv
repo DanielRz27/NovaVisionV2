@@ -1,0 +1,13 @@
+caracteristica,vif
+relacion_ancho_alto,1.159
+brillo_promedio,1e+16
+contraste,4.412
+densidad_bordes_canny,2.599
+bordes_horizontales_sobel_x,3.212
+bordes_verticales_sobel_y,3.72
+intensidad_centro,1e+16
+intensidad_fondo,1e+16
+diferencia_centro_fondo,1.608
+simetria_horizontal,2.052
+textura_laplaciano,2.928
+proporcion_pixeles_oscuros,7.236

@@ -1,0 +1,10 @@
+metrica,valor
+VP,32
+VN,39
+FP,16
+FN,23
+total,110
+exactitud,64.55
+precision,66.67
+sensibilidad,58.18
+especificidad,70.91

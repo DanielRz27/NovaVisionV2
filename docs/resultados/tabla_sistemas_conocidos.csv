@@ -1,0 +1,13 @@
+sistema,metodo,cond_1,error_relativo,residuo,iteraciones,convergio
+S1 diagonal dominante 3x3,Gauss,3.155,0,0,,True
+S1 diagonal dominante 3x3,LU,3.155,0,0,,True
+S1 diagonal dominante 3x3,Jacobi,3.155,9.762e-14,2.844e-12,48,True
+S1 diagonal dominante 3x3,Gauss-Seidel,3.155,1.966e-14,3.281e-13,16,True
+S2 requiere pivoteo 3x3,Gauss,18.33,0,0,,True
+S2 requiere pivoteo 3x3,LU,18.33,0,0,,True
+S3 SPD dominante 10x10,Gauss,5.056,2.197e-16,1.335e-14,,True
+S3 SPD dominante 10x10,LU,5.056,1.883e-16,1.066e-14,,True
+S3 SPD dominante 10x10,Jacobi,5.056,2.879e-14,4.089e-12,49,True
+S3 SPD dominante 10x10,Gauss-Seidel,5.056,5.792e-15,3.436e-13,20,True
+S4 Hilbert 8x8 (mal condicionada),Gauss,3.387e+10,3.585e-08,1.11e-16,,True
+S4 Hilbert 8x8 (mal condicionada),LU,3.387e+10,1.2e-07,1.11e-16,,True

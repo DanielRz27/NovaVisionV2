@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaVision - Clasificador Perro/Gato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🐾 NovaVision</h1>
+
+    <p class="descripcion">
+        Clasificador de imágenes de perros y gatos
+        mediante procesamiento de imágenes y métodos numéricos.
+    </p>
+
+    <p id="infoModelo" class="info-modelo"></p>
+
+    <div class="botones">
+        <input type="file" id="imagenInput" accept="image/*" hidden>
+        <label for="imagenInput" class="btn btn-archivo">📁 Seleccionar Imagen</label>
+        <button id="btnCamara" class="btn btn-camara">📷 Tomar Foto</button>
+    </div>
+
+    <div id="camaraContainer" class="camara-container">
+        <video id="video" autoplay playsinline></video>
+        <div class="controles-camara">
+            <button id="btnCapturar" class="btn-capturar">📸 Capturar Foto</button>
+            <button id="btnCerrarCamara" class="btn-cerrar">✖ Cerrar Cámara</button>
+        </div>
+    </div>
+
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <p id="fileName" class="file-name">Ninguna imagen seleccionada</p>
+
+    <div class="preview-area">
+        <img id="preview" src="" alt="Vista previa">
+    </div>
+
+    <button id="btnAnalizar" class="analyze-btn" disabled>🔍 Analizar Imagen</button>
+
+    <div id="resultado" class="resultado"></div>
+
+    <section class="prueba-rapida">
+        <h2>Prueba rápida</h2>
+        <p class="descripcion">
+            Usa imágenes del conjunto de prueba, que el modelo no vio al entrenar.
+        </p>
+        <div class="botones">
+            <button id="btnMuestra" class="btn btn-muestra">🎲 Probar 8 al azar</button>
+            <button id="btnEvaluar" class="btn btn-evaluar">📊 Evaluar todo el conjunto</button>
+        </div>
+        <div id="muestraResultado"></div>
+        <div id="evaluacionResultado"></div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

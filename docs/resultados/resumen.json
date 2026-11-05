@@ -1,0 +1,195 @@
+{
+  "lambda": 0.01,
+  "n_train": 812,
+  "n_test": 110,
+  "radio_espectral_jacobi": 2.5563459195312217,
+  "radio_espectral_gauss_seidel": 0.9999753690041187,
+  "cond_2_A": 288778.8450167865,
+  "cond_1_A": 419112.36555794335,
+  "cond_inf_A": 419112.36555794347,
+  "colinealidad": {
+    "rango": 11,
+    "n": 12,
+    "vif": {
+      "relacion_ancho_alto": 1.1589558348714875,
+      "brillo_promedio": 1e+16,
+      "contraste": 4.411788045172739,
+      "densidad_bordes_canny": 2.5986701411065,
+      "bordes_horizontales_sobel_x": 3.211515397419517,
+      "bordes_verticales_sobel_y": 3.7202028751322955,
+      "intensidad_centro": 1e+16,
+      "intensidad_fondo": 1e+16,
+      "diferencia_centro_fondo": 1.6079807106314363,
+      "simetria_horizontal": 2.0522420472656684,
+      "textura_laplaciano": 2.928218346959725,
+      "proporcion_pixeles_oscuros": 7.2358145188015
+    },
+    "dif_brillo": 2.220446049250313e-16
+  },
+  "metodos": [
+    {
+      "metodo": "Gauss",
+      "iteraciones": 0,
+      "convergio": true,
+      "tiempo_s": 0.000475199893116951,
+      "error_relativo_vs_numpy": 9.279157598032718e-13,
+      "residuo": 7.30239488898258e-14
+    },
+    {
+      "metodo": "LU",
+      "iteraciones": 0,
+      "convergio": true,
+      "tiempo_s": 0.00045950012281537056,
+      "error_relativo_vs_numpy": 1.127109012051039e-12,
+      "residuo": 6.774798861812911e-14,
+      "tiempo_factorizacion_s": 0.00035310001112520695,
+      "tiempo_solo_resolver_s": 0.00010640011169016361
+    },
+    {
+      "metodo": "Jacobi (máx. 5000)",
+      "iteraciones": 40,
+      "convergio": false,
+      "tiempo_s": 0.0005822000093758106,
+      "error_relativo_vs_numpy": 583030995789176.4,
+      "residuo": 9.406436625907007e+17
+    },
+    {
+      "metodo": "Gauss-Seidel (máx. 5000)",
+      "iteraciones": 5000,
+      "convergio": false,
+      "tiempo_s": 0.2812353998888284,
+      "error_relativo_vs_numpy": 0.1246680670538219,
+      "residuo": 0.001088819717838409
+    },
+    {
+      "metodo": "Gauss-Seidel (máx. 250000)",
+      "iteraciones": 201674,
+      "convergio": true,
+      "tiempo_s": 10.027452999958768,
+      "error_relativo_vs_numpy": 0.0009814920118111816,
+      "residuo": 8.572105770971851e-06
+    }
+  ],
+  "metricas_test": {
+    "VP": 32,
+    "VN": 39,
+    "FP": 16,
+    "FN": 23,
+    "total": 110,
+    "exactitud": 64.54545454545455,
+    "precision": 66.66666666666666,
+    "sensibilidad": 58.18181818181818,
+    "especificidad": 70.9090909090909
+  },
+  "metricas_train": {
+    "VP": 244,
+    "VN": 273,
+    "FP": 133,
+    "FN": 162,
+    "total": 812,
+    "exactitud": 63.669950738916256,
+    "precision": 64.72148541114059,
+    "sensibilidad": 60.09852216748769,
+    "especificidad": 67.24137931034483
+  },
+  "r2_train": 0.09174826217783627,
+  "valores_fuera_de_01_test": 0,
+  "barrido_lambda": [
+    {
+      "lambda": 0.001,
+      "cond2": 2887779.4505774463,
+      "rho_jacobi": 2.5563742533796736,
+      "rho_gs": 0.9999975369412744,
+      "iter_gs": 60000,
+      "gs_convergio": false,
+      "acc_cv": 61.45951677649018,
+      "acc_test": 64.54545454545455
+    },
+    {
+      "lambda": 0.01,
+      "cond2": 288778.8450167865,
+      "rho_jacobi": 2.5563459195312217,
+      "rho_gs": 0.9999753690041187,
+      "iter_gs": 60000,
+      "gs_convergio": false,
+      "acc_cv": 61.45951677649018,
+      "acc_test": 64.54545454545455
+    },
+    {
+      "lambda": 0.1,
+      "cond2": 28878.78450123391,
+      "rho_jacobi": 2.556062615587428,
+      "rho_gs": 0.9997536491434026,
+      "iter_gs": 29514,
+      "gs_convergio": true,
+      "acc_cv": 61.33681738998712,
+      "acc_test": 64.54545454545455
+    },
+    {
+      "lambda": 1,
+      "cond2": 2888.7784501189653,
+      "rho_jacobi": 2.553233025976074,
+      "rho_gs": 0.9975323643486946,
+      "iter_gs": 3882,
+      "gs_convergio": true,
+      "acc_cv": 61.33681738998712,
+      "acc_test": 64.54545454545455
+    },
+    {
+      "lambda": 10,
+      "cond2": 289.7778450118597,
+      "rho_jacobi": 2.5252779198522473,
+      "rho_gs": 0.9748652411633303,
+      "iter_gs": 475,
+      "gs_convergio": true,
+      "acc_cv": 61.58221616299327,
+      "acc_test": 65.45454545454545
+    },
+    {
+      "lambda": 100,
+      "cond2": 29.877784501185477,
+      "rho_jacobi": 2.2760728619720916,
+      "rho_gs": 0.7753848925465386,
+      "iter_gs": 59,
+      "gs_convergio": true,
+      "acc_cv": 60.97099144133908,
+      "acc_test": 65.45454545454545
+    },
+    {
+      "lambda": 1000,
+      "cond2": 4.7879044952198475,
+      "rho_jacobi": 1.1455730960919155,
+      "rho_gs": 0.29713107462807553,
+      "iter_gs": 14,
+      "gs_convergio": true,
+      "acc_cv": 59.24335378323108,
+      "acc_test": 65.45454545454545
+    }
+  ],
+  "caracteristicas_base_vs_ampliado": [
+    [
+      "base (12)",
+      12,
+      0.01,
+      "63.67",
+      "64.55",
+      "2.89e+05"
+    ],
+    [
+      "ampliado (28)",
+      28,
+      0.01,
+      "65.39",
+      "67.27",
+      "6.82e+05"
+    ],
+    [
+      "avanzado (1407)",
+      1407,
+      3000,
+      "89.16",
+      "74.55",
+      "9.89e+01"
+    ]
+  ]
+}

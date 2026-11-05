@@ -1,0 +1,32 @@
+{
+  "modo": "avanzado",
+  "n_caracteristicas": 1407,
+  "lambda": 3000.0,
+  "n_train": 812,
+  "n_test": 110,
+  "exactitud_cv": 73.27586206896551,
+  "exactitud_train": 89.16256157635468,
+  "exactitud_test": 74.54545454545455,
+  "cv_por_lambda": {
+    "3000.0": 73.27586206896551
+  },
+  "metricas_test": {
+    "VP": 42,
+    "VN": 40,
+    "FP": 15,
+    "FN": 13,
+    "total": 110,
+    "exactitud": 74.54545454545455,
+    "precision": 73.68421052631578,
+    "sensibilidad": 76.36363636363637,
+    "especificidad": 72.72727272727273
+  },
+  "comparacion_solvers": {
+    "error_lu_vs_gauss": 5.981704118876967e-16,
+    "error_gs_vs_gauss": 3.947991226725817e-09,
+    "iteraciones_gs": 174,
+    "gs_convergio": true,
+    "tiempo_gs_s": 1.0143678998574615,
+    "cond_2_A": 98.91784536043596
+  }
+}

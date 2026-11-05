@@ -1,0 +1,6 @@
+metodo,iteraciones,convergio,tiempo_s,error_relativo_vs_numpy,residuo
+Gauss,0,True,0.0004752,9.279e-13,7.302e-14
+LU,0,True,0.0004595,1.127e-12,6.775e-14
+Jacobi (máx. 5000),40,False,0.0005822,5.83e+14,9.406e+17
+Gauss-Seidel (máx. 5000),5000,False,0.2812,0.1247,0.001089
+Gauss-Seidel (máx. 250000),201674,True,10.03,0.0009815,8.572e-06

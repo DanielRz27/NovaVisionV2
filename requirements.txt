@@ -1,0 +1,8 @@
+numpy
+opencv-python
+matplotlib
+scikit-learn
+pandas
+flask
+
+# py -m pip install numpy pandas matplotlib flask opencv-python scikit-learn
